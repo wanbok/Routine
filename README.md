@@ -1,6 +1,6 @@
-# routine
+# Routine
 
-A new Flutter project.
+The simplest task notifier.
 
 ## Getting Started
 
