@@ -1,7 +1,8 @@
 import 'package:equatable/equatable.dart';
-
+import 'package:meta/meta.dart';
 import 'package:routine/task/task.dart';
 
+@immutable
 abstract class TaskListState extends Equatable {
   TaskListState([List props = const []]) : super(props);
 }
