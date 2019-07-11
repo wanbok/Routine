@@ -7,12 +7,26 @@ class Task extends Equatable {
   final String name;
   final DateTime startAt;
   final DateTime fireAt;
+  final Period period;
   final bool isRepeatable;
 
-  Task({id: String, name: String, startAt: DateTime, fireAt: DateTime, isReapeatable: bool})
+  Task({id: String, name: String, startAt: DateTime, fireAt: DateTime, period: Period, isReapeatable: bool})
     : this.id = id,
       this.name = name,
       this.startAt = startAt,
       this.fireAt = fireAt,
+      this.period = period,
       this.isRepeatable = isReapeatable;
+}
+
+enum Period {
+  second,
+  minute,
+  hour,
+  day,
+  week,
+  month,
+  year,
+  decade,
+  century
 }
