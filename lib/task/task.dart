@@ -1,32 +1,33 @@
-import 'package:meta/meta.dart';
-import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
 
-@immutable
-class Task extends Equatable {
-  final String id;
-  final String name;
-  final DateTime startAt;
-  final DateTime fireAt;
-  final Period period;
-  final bool isRepeatable;
+class Task extends StatefulWidget {
+  Task({Key key}) : super(key: key);
 
-  Task({id: String, name: String, startAt: DateTime, fireAt: DateTime, period: Period, isReapeatable: bool})
-    : this.id = id,
-      this.name = name,
-      this.startAt = startAt,
-      this.fireAt = fireAt,
-      this.period = period,
-      this.isRepeatable = isReapeatable;
+  @override
+  _TaskState createState() => _TaskState();
 }
 
-enum Period {
-  second,
-  minute,
-  hour,
-  day,
-  week,
-  month,
-  year,
-  decade,
-  century
+class _TaskState extends State<Task> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder( // TODO: Apply data
+      itemCount: 1,
+      itemBuilder: (context, index) => TaskItem(),
+    );
+  }
+}
+
+class TaskItem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/sample.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: null /* add child content here */,
+      );
+  }
 }

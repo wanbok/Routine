@@ -1,9 +1,9 @@
 import 'package:equatable/equatable.dart';
 
-import 'package:routine/task/task.dart';
+import 'package:routine/models/task.dart';
 
 abstract class TaskState extends Equatable {
-  TaskState({Task task}) : super();
+  TaskState({TaskModel task}) : super();
 }
 
 class TaskStopped extends TaskState {

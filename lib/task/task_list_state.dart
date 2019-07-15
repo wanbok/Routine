@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:routine/task/task.dart';
+import 'package:routine/models/task.dart';
 
 @immutable
 abstract class TaskListState extends Equatable {
@@ -18,7 +18,7 @@ class TaskListError extends TaskListState {
 }
 
 class TaskListLoaded extends TaskListState {
-  final List<Task> tasks;
+  final List<TaskModel> tasks;
   final bool hasReachedMax;
 
   TaskListLoaded({
@@ -27,7 +27,7 @@ class TaskListLoaded extends TaskListState {
   }) : super([tasks, hasReachedMax]);
 
   TaskListLoaded copyWith({
-    List<Task> tasks,
+    List<TaskModel> tasks,
     bool hasReachedMax,
   }) {
     return TaskListLoaded(
