@@ -10,16 +10,6 @@ class Task extends StatefulWidget {
 class _TaskState extends State<Task> {
   @override
   Widget build(BuildContext context) {
-    return ListView.builder( // TODO: Apply data
-      itemCount: 1,
-      itemBuilder: (context, index) => TaskItem(),
-    );
-  }
-}
-
-class TaskItem extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -28,6 +18,6 @@ class TaskItem extends StatelessWidget {
           ),
         ),
         child: null /* add child content here */,
-      );
+    );
   }
 }
