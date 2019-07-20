@@ -8,6 +8,10 @@ class Task extends StatefulWidget {
 }
 
 class _TaskState extends State<Task> {
+  String title;
+  String routineTime;
+  String state;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +21,13 @@ class _TaskState extends State<Task> {
             fit: BoxFit.cover,
           ),
         ),
-        child: null /* add child content here */,
+        child: Row(
+          children: [
+            Text(title),
+            Text(routineTime),
+            Text(state),
+          ],
+        ) /* add child content here */,
     );
   }
 }
