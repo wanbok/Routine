@@ -27,7 +27,7 @@ class _TaskState extends State<Task> {
             Text(routineTime),
             Text(state),
           ],
-        ) /* add child content here */,
+        ),
     );
   }
 }
