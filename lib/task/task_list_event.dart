@@ -19,3 +19,15 @@ class Select extends TaskListEvent {
   @override
   String toString() => 'Select';
 }
+
+class New extends TaskListEvent {
+  @override
+  String toString() => 'Select';
+}
+
+class Delete extends TaskListEvent {
+  TaskModel task;
+
+  @override
+  String toString() => 'Select';
+}
