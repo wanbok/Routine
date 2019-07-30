@@ -17,6 +17,11 @@ class TaskListError extends TaskListState {
   String toString() => 'TaskListError';
 }
 
+class TaskListNoItem extends TaskListState {
+  @override
+  String toString() => 'TaskListNoItem';
+}
+
 class TaskListLoaded extends TaskListState {
   final List<TaskModel> tasks;
   final bool hasReachedMax;
