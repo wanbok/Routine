@@ -7,6 +7,11 @@ class Fetch extends TaskEvent {
   String toString() => 'Fetch';
 }
 
+class New extends TaskEvent {
+  @override
+  String toString() => 'New';
+}
+
 class Update extends TaskEvent {
   @override
   String toString() => 'Update';
