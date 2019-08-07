@@ -8,9 +8,9 @@ class Fetch extends TaskListEvent {
   String toString() => 'Fetch';
 }
 
-class LoadMore extends TaskListEvent {
+class More extends TaskListEvent {
   @override
-  String toString() => 'LoadMore';
+  String toString() => 'More';
 }
 
 class Select extends TaskListEvent {
