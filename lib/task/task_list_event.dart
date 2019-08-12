@@ -3,29 +3,29 @@ import 'package:routine/models/task.dart';
 
 abstract class TaskListEvent extends Equatable {}
 
-class Fetch extends TaskListEvent {
+class FetchTaskList extends TaskListEvent {
   @override
   String toString() => 'Fetch';
 }
 
-class More extends TaskListEvent {
+class MoreTaskList extends TaskListEvent {
   @override
   String toString() => 'More';
 }
 
-class Select extends TaskListEvent {
+class SelectTaskList extends TaskListEvent {
   TaskModel task;
 
   @override
   String toString() => 'Select';
 }
 
-class New extends TaskListEvent {
+class NewTaskList extends TaskListEvent {
   @override
   String toString() => 'Select';
 }
 
-class Delete extends TaskListEvent {
+class DeleteTaskList extends TaskListEvent {
   TaskModel task;
 
   @override

@@ -2,22 +2,22 @@ import 'package:equatable/equatable.dart';
 
 abstract class TaskEvent extends Equatable {}
 
-class Fetch extends TaskEvent {
+class FetchTask extends TaskEvent {
   @override
   String toString() => 'Fetch';
 }
 
-class New extends TaskEvent {
+class NewTask extends TaskEvent {
   @override
   String toString() => 'New';
 }
 
-class Update extends TaskEvent {
+class UpdateTask extends TaskEvent {
   @override
   String toString() => 'Update';
 }
 
-class Remove extends TaskEvent {
+class RemoveTask extends TaskEvent {
   @override
   String toString() => 'Remove';
 }
